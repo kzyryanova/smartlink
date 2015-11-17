@@ -1,6 +1,9 @@
 class DashboardController < ApplicationController
-  def show
+  def index
+    @link = Link.new
   end
+
+
 
 
 end

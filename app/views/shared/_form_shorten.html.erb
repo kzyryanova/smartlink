@@ -1,0 +1,15 @@
+<%= form_for @link do |form| %>
+  <% if @link.errors[:given_url].any? %>
+    <p class='error-messages'>
+      The given url <%= @link.errors[:given_url].to_sentence %>.
+    </p>
+  <% end %>
+
+  <div class="input-group form-group input-group-lg">
+    <%= form.text_field :given_url, class: "form-control input-lg" %>
+    <span class="input-group-btn">
+      <%= form.submit "Shorten", class: "btn btn-success" %>
+    </span>
+  </div>
+
+<% end %>

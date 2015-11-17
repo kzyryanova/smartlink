@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Your Shorten Links</div>
+  <ul class="list-group">
+    <% @links.each do |link| %>
+      <li class="list-group-item">
+        <%= link_to link_url(link), link_url(link), class: "text-success" %><br>
+        <span><%= link.given_url %></span>
+      </li>
+    <% end %>
+  </ul>
+</div>

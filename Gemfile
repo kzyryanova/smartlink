@@ -47,3 +47,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
 
 gem 'bcrypt-ruby', '>= 3.0.1'
+
+gem 'hashids_rails'
