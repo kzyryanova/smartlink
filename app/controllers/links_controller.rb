@@ -5,7 +5,6 @@ class LinksController < ApplicationController
 
   def new
     @link = Link.new
-    @links = Link.all
   end
 
   def create

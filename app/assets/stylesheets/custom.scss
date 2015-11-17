@@ -1,23 +1,60 @@
 @import "bootstrap";
+@import "variables";
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
 
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #a3aaae;
+  color: $main-color;
+  padding: 20px 0;
 }
 
 .header {
   padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: $border;
   margin-bottom: 30px;
+  a {
+    text-decoration: none;
+  }
 }
 
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  border-top: $border;
 }
 
 .marketing {
   margin: 40px 0;
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  padding-bottom: $footer-height;
+}
+
+footer {
+  width: 100%;
+  height: $footer-height;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: $placeholder-color;
+}
+.form-control::-moz-placeholder {
+  color: $placeholder-color;
+}
+
+.form-control:-ms-input-placeholder {
+  color: $placeholder-color;
 }

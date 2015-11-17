@@ -3,7 +3,8 @@
   <ul class="list-group">
     <% @links.each do |link| %>
       <li class="list-group-item">
-        <%= link_to link_url(link), link_url(link), class: "text-success" %><br>
+        <%= link_to visit_remote_url(link), "#", class: "text-success" %> <button type="button" class="btn btn-xs btn-info">Copy</button>
+        <br>
         <span><%= link.given_url %></span>
       </li>
     <% end %>

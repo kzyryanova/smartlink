@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Dashboard" do
+describe "Links" do
 
     it "should have the context SmartLink" do
       visit root_path
