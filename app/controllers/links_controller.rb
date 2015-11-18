@@ -10,9 +10,9 @@ class LinksController < ApplicationController
   def create
     @link = Link.new(link_params)
     if @link.save
-      redirect_to link_url
+      redirect_to @link
     else
-      render action: "new"
+      render "new"
     end
   end
 

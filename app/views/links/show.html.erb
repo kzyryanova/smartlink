@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h3>Your URL was shortened</h3>
+<h4>Your URL was shortened</h4>
 
-<p>The new short URL is <%= link_to visit_remote_url(@link), visit_remote_url(@link) %>.</p>
-
-<p>The URL leads to <%= link_to @link.given_url, @link.given_url %>.</p>
-
-<p><%= link_to 'Shorten another URL', new_link_path %></p>
-
-<p><%= link_to 'List of URLs', links_path %></p>
+<div class="well">
+  <%= render 'short_link', link: @link %>
+</div>
+<p>
+  <%= link_to 'Shorten another URL', new_link_path, class: "btn btn-success" %>
+  <%= link_to 'List of URLs', links_path, class: "btn btn-default" %>
+</p>

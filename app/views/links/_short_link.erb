@@ -1,0 +1,7 @@
+<% if link_disabled?(link) %>
+  <span class="text-warning" > <%= visit_remote_url(link) %> </span>
+<% else %>
+  <%= link_to visit_remote_url(link), "#", class: "text-success" %>
+<% end %>
+<br>
+<span><%= link.given_url %></span>
